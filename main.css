@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+:root {
+    --bg: #0F0F0F;
+    --black: #000;
+    --white: #fff;
+}
+body {
+    background: var(--bg);
+    color: var(--white);
+    padding: 30px;
+    font-family: 'Poppins', sans-serif;
+}
+header,
+nav {
+    display: flex;
+}
+header {
+    justify-content: space-between;
+}
+.yudaev {
+    font-size: 24px;
+    font-weight: 400;
+}
+nav {
+    gap: 50px;
+}
+nav div {
+    font-size: 12px;
+    font-weight: 300;
+    color: rgba(255, 255, 255, .7);
+}
+.zayavka {
+    text-decoration: underline;
+    font-size: 24pxж
+}
+.zayavka:hover,
+nav div:hover {
+    cursor: pointer;
+    color: var(--white);
+}
+.engine {
+    position: absolute;
+    top: calc(50% - 240px);
+    left: calc(50% - 225px);
+    width: 500px;
+    pointer-events: none;
+    z-index: 4;
+}
+.inicial {
+    position: absolute;
+    top: calc(50% - 27%);
+    left: calc(50% - 460px);
+    width: 100px;
+    pointer-events: none;
+    z-index: 3;
+}
+.hazard {
+    position: absolute;
+    top: calc(50% - 270px);
+    left: calc(50% - 250px);
+    width: 150px;
+    pointer-events: none;
+    z-index: 20;
+}
+.main__title {
+    position: relative;
+    text-align: center;
+    margin-top: 10%;
+    font-size: 140px;
+    font-weight: 400;
+    z-index: 1001;
+    mix-blend-mode: exclusion;
+}
+
+footer {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 30px 10px 30px;
+    align-items: center;
+}
+.footer__content {
+    width: 50%;
+    font-size: 16px;
+    line-height: 1.1;
+    font-weight: 300;
+}
+.footer__types {
+    display: flex;
+    gap: 20px;
+}
+.footer__type {
+    background: transparent;
+    border-radius: 100px;
+    border: 1px solid var(--white);
+    padding: 10px 30px;
+    font-size: 16px;
+}
+.footer__type:hover {
+    cursor: pointer;
+    background: var(--white);
+    color: var(--bg);
+}
